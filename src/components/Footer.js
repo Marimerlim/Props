@@ -7,7 +7,7 @@ export const Rodape = styled.footer`
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
   img {
     width: 50px;
