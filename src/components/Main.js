@@ -1,9 +1,9 @@
-import { Component } from "react";
+import React, { Component } from "react";
 
 import styled from "styled-components";
 
 export const Cartao = styled.div`
-  background-color: lightsalmon;
+  background-color: #f0ffff;
   width: 230px;
   height: 330px;
   align-items: center;
@@ -16,10 +16,6 @@ export const Cartao = styled.div`
     height: 180px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-  }
-  img:hover {
-    transform: scale(1.1);
-    border-radius: 0 0 0 0;
   }
 
   p {
@@ -34,6 +30,7 @@ export const Cartao = styled.div`
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
+    background-color: #d8bfd8;
   }
   button:hover {
     transform: scale(1.1);
@@ -46,7 +43,7 @@ export default class Main extends Component {
       <Cartao>
         <img src={this.props.foto} alt="coelho" />
 
-        <h2>{this.props.nome}</h2>
+        <h3>{this.props.nome}</h3>
         <p>{this.props.idade}</p>
         <p>{this.props.caracteristica}</p>
 
