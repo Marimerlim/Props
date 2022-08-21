@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const Cartao = styled.div`
   background-color: #f0ffff;
   width: 230px;
-  height: 330px;
+  /* height: 330px; */
   align-items: center;
   text-align: center;
   margin: 20px;
@@ -47,8 +47,8 @@ export default class Main extends Component {
         <p>{this.props.idade}</p>
         <p>{this.props.caracteristica}</p>
 
-        <button>Saber mais</button>
-        <button>Adotar</button>
+        {/* <button>Saber mais</button>
+        <button>Adotar</button> */}
       </Cartao>
     );
   }
